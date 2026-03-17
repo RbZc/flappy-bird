@@ -1,14 +1,21 @@
-
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { display: flex; justify-content: center; align-items: flex-start; padding: 1rem 0; }
-  #gameWrap { display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%; max-width: 420px; }
-  canvas { border-radius: 12px; border: 0.5px solid var(--color-border-tertiary); display: block; cursor: pointer; width: 100%; }
-  #ui { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 0 2px; }
-  #scoreBox { font-size: 24px; font-weight: 500; color: var(--color-text-primary); }
-  #bestBox { font-size: 13px; color: var(--color-text-secondary); }
-  #hint { font-size: 13px; color: var(--color-text-secondary); text-align: center; }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { display: flex; justify-content: center; align-items: flex-start; padding: 1rem 0; }
+      #gameWrap { display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%; max-width: 420px; }
+      canvas { border-radius: 12px; border: 0.5px solid var(--color-border-tertiary); display: block; cursor: pointer; width: 100%; }
+      #ui { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 0 2px; }
+      #scoreBox { font-size: 24px; font-weight: 500; color: var(--color-text-primary); }
+      #bestBox { font-size: 13px; color: var(--color-text-secondary); }
+      #hint { font-size: 13px; color: var(--color-text-secondary); text-align: center; }
+    </style>
+</head>
+<body>
 
 <div id="gameWrap">
   <div id="ui">
@@ -288,3 +295,6 @@ drawBg();
 drawBird();
 drawOverlay('Flappy Bird', 'click / tap / space to start');
 </script>
+
+</body>
+</html>
